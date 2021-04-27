@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DeberSemana3JossuePalacios.VentanaDos">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Deber Semana 3: Login con Clave" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Label Text="Ingrese la Nota de Seguimiento 1" ></Label>
+            <Entry x:Name="txtNota1" Keyboard="Numeric"></Entry>
+
+            <Label Text="Ingrese la nota del Examen 1"></Label>
+            <Entry x:Name="txtExamen1" Keyboard="Numeric"></Entry>
+
+            <Label Text="Nota Parcial 1"></Label>
+            <Entry x:Name="txtNparcial1" IsEnabled="False"></Entry>
+
+            <Button x:Name="btnCalcular1"
+                Text="Calcular Nota Parcial 1"
+                Clicked="btnCalcular1_Clicked"></Button>
+
+            <Label Text="Ingrese la Nota de Seguimiento 2" ></Label>
+            <Entry x:Name="txtNota2" Keyboard="Numeric"></Entry>
+
+            <Label Text="Ingrese la nota del Examen 2"></Label>
+            <Entry x:Name="txtExamen2" Keyboard="Numeric"></Entry>
+
+            <Label Text="Nota Parcial 2"></Label>
+            <Entry x:Name="txtNparcial2" IsEnabled="False"></Entry>
+
+            <Button x:Name="btnCalcular2"
+                Text="Calcular Nota Parcial 2"
+                Clicked="btnCalcular2_Clicked"></Button>
+
+            <Label Text="Nota Final"></Label>
+            <Entry x:Name="txtNfinal" IsEnabled="False"></Entry>
+
+            <Button x:Name="btnCalcular3"
+                Text="Calcular Nota Final"
+                Clicked="btnCalcular3_Clicked"></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
